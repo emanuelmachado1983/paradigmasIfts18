@@ -28,7 +28,21 @@ def validarIngresoArchivo(nombreArchivo):
     if len(vectorAux) == 2:
         if vectorAux[1] != "csv":
             print ("Solo se pueden ingresar archivos .csv")
+            return False
     return True
+
+def validarDocumento (documento, listaErrores, x):
+    try:
+        int(documento)
+    except ValueError:
+        listaErrores.append(f"Linea {x}: El documento tiene que ser un valor numérico.")
+    if len(documento) != 7 and len(documento) != 8:
+        listaErrores.append(f"Linea {x}: El documento solo puede ser de 7 o 8 caracteres.")
+
+def validarCamposVacios(linea, listaErrores, x):
+    for item in linea:
+        if (linea[item]) == "":
+            listaErrores.append(f"Linea {x}: El campo {item} no puede ser vacío.")
 
 def validarArchivoClientes(archivoClientes, camposClientes):
     #Valida si el archivo de clientes tiene alguno de los siguientes problemas:
@@ -48,17 +62,10 @@ def validarArchivoClientes(archivoClientes, camposClientes):
             for linea in lectura_clientes_csv:
                 #valido que los documentos sean numéricos
                 documento = linea[camposClientes[g.COLUMNA_CLIENTES_DOCUMENTO]]
-                try:
-                    int(documento)
-                except ValueError:
-                    listaErrores.append(f"Linea {x}: El documento tiene que ser un valor numérico.")
-                if len(documento) != 7 and len(documento) != 8:
-                    listaErrores.append(f"Linea {x}: El documento solo puede ser de 7 o 8 caracteres.")
+                validarDocumento (documento, listaErrores, x)
             
                 #valido que no haya campos vacíos
-                for item in linea:
-                    if (linea[item]) == "":
-                        listaErrores.append(f"Linea {x}: El campo {item} no puede ser vacío.")
+                validarCamposVacios(linea, listaErrores, x)
 
                 #valido mail
                 mail = linea[camposClientes[g.COLUMNA_CLIENTES_CORREO]]
@@ -89,6 +96,8 @@ def validarArchivoViajes(archivoViajes, camposViajes):
     #Valida si el archivo de clientes tiene alguno de los siguientes problemas:
     #-El monto no es numérico.
     #-El monto tiene que tener dos decimales.
+    #-Los documentos tienen que ser de 7 u 8 caracteres.
+    #-Los campos no pueden ser vacíos.
     try:
         with open(archivoViajes,'r', newline='', encoding="utf8") as file_viajes:
             lectura_viajes_csv = csv.DictReader(file_viajes)
@@ -96,6 +105,13 @@ def validarArchivoViajes(archivoViajes, camposViajes):
             listaErrores = []
             x = 2
             for linea in lectura_viajes_csv:
+                #valido que los documentos sean numéricos
+                documento = linea[camposViajes[g.COLUMNA_VIAJES_DOCUMENTO]]
+                validarDocumento (documento, listaErrores, x)
+            
+                #valido que no haya campos vacíos
+                validarCamposVacios(linea, listaErrores, x)
+
                 monto = linea[camposViajes[g.COLUMNA_VIAJES_MONTO]]
                 montoNumerico = True
                 try:

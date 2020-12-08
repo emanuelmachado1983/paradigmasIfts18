@@ -1,54 +1,6 @@
-2020-12-08 14:47:02,Buscar cliente,clientes.csv,_,OK,roc
-2020-12-08 14:47:06,Total de usuarios por empresa,clientes.csv,,OK,byma
-2020-12-08 14:47:25,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
-2020-12-08 14:47:46,Total de dinero por empresa,clientes.csv,viajes.csv,OK,nexos
-2020-12-08 14:48:21,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,byma
-2020-12-08 14:48:27,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,20644781
-2020-12-08 14:48:40,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,20644781
-2020-12-08 14:49:23,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,2
-2020-12-08 14:49:28,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,30495657
-2020-12-08 14:49:34,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,20744841
-2020-12-08 14:49:40,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,20644781
-2020-12-08 14:50:18,Salir,clientes.csv,viajes.csv,Salir,_
-2020-12-08 14:51:15,Salir,clientes.csv,viajes.csv,Salir,_
-2020-12-08 14:51:26,Salir,clientes.csv,viajes.csv,Salir,_
-2020-12-08 14:54:35,Salir,clientes.csv,viajes.csv,Salir,_
-2020-12-08 14:54:49,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,30495657
-2020-12-08 14:55:20,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,4
-2020-12-08 14:55:34,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
-2020-12-08 14:55:40,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
-2020-12-08 14:55:46,Total de usuarios por empresa,clientes.csv,,OK,byma
-2020-12-08 14:55:50,Buscar cliente,clientes.csv,_,OK,roc
-2020-12-08 14:55:53,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,30495657
-2020-12-08 14:55:55,Salir,clientes.csv,viajes.csv,Salir,_
-2020-12-08 15:01:55,Buscar cliente,clientes.csv,_,OK,roc
-2020-12-08 15:01:59,Total de usuarios por empresa,clientes.csv,,OK,byma
-2020-12-08 15:02:03,Total de dinero por empresa,clientes.csv,viajes.csv,No se encontró ninguna empresa.,byna
-2020-12-08 15:02:06,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
-2020-12-08 15:02:20,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,20644781
-2020-12-08 15:02:34,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
-2020-12-08 15:02:42,Salir,clientes.csv,viajes.csv,Salir,_
-2020-12-08 15:19:44,Buscar cliente,clientes.csv,_,OK,roc
-2020-12-08 15:19:54,Total de usuarios por empresa,clientes.csv,,OK,byma
-2020-12-08 15:20:11,Total de usuarios por empresa,clientes.csv,,OK,nexos
-2020-12-08 15:20:37,Total de dinero por empresa,clientes.csv,viajes.csv,OK,nexos
-2020-12-08 15:20:56,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
-2020-12-08 15:28:29,Buscar cliente,clientes.csv,_,OK,roc
-2020-12-08 15:28:44,Total de usuarios por empresa,clientes.csv,,OK,byma
-2020-12-08 15:28:49,Total de usuarios por empresa,clientes.csv,,OK,
-2020-12-08 15:29:15,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
-2020-12-08 15:29:17,Total de dinero por empresa,clientes.csv,viajes.csv,Debe ingresar al menos el nombre de una empresa,
-2020-12-08 15:29:36,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
-2020-12-08 15:30:35,Salir,clientes.csv,viajes.csv,Salir,_
-2020-12-08 15:30:48,Buscar cliente,clientes.csv,_,OK,roc
-2020-12-08 15:30:55,Total de usuarios por empresa,clientes.csv,,OK,
-2020-12-08 15:31:11,Total de usuarios por empresa,clientes.csv,,OK,nexos
-2020-12-08 15:31:38,Total de dinero por empresa,clientes.csv,viajes.csv,OK,nexos
-2020-12-08 15:31:50,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
-2020-12-08 15:32:39,Buscar cliente,clientes.csv,_,OK,roc
-2020-12-08 15:32:44,Total de usuarios por empresa,clientes.csv,,OK,byma
-2020-12-08 15:32:46,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
-2020-12-08 15:32:53,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
-2020-12-08 15:33:07,Salir,clientes.csv,viajes.csv,Salir,_
-2020-12-08 15:33:40,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
-2020-12-08 15:36:19,Salir,clientes.csv,viajes.csv,Salir,_
+fecha,opcionMenu,archivoClientes,archivoViajes,resultado,parametros
+2020-12-08 16:49:58,Buscar cliente,clientes.csv,_,OK,roc
+2020-12-08 16:51:54,Total de usuarios por empresa,clientes.csv,,OK,byma
+2020-12-08 16:51:58,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
+2020-12-08 16:52:02,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
+2020-12-08 16:52:04,Salir,clientes.csv,viajes.csv,Salir,_

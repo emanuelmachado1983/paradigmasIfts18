@@ -1,0 +1,66 @@
+Documentación:
+
+1) El punto que dice lo siguiente: "Deberá tener un menú principal con las acciones disponibles"
+	Este punto lo hace la función: buscarCliente
+		- Hace una búsqueda de clientes por nombre ingresado.
+		- Devuelve los clientes que tienen adentro de su nombre el valor ingresado por parámetro.
+		- Por ejemplo si ingreso "pedro", va a traer todos los que tengan ese valor dentro del nombre (pedro gutierrez, pedro ramirez)    
+		
+2) El punto que dice: "Permitir la búsqueda de un cliente por su nombre (parcial o total) , mostrando todos sus datos. "
+	Lo hace la función: totalUsuariosPorEmpresa
+		- Trae el total de usuarios por empresa
+		- De la misma forma que el la funcion "buscarCliente", con poner parte del nombre alcanza.
+		- Si dos empresas en su nombre contienen la variable "empresaIngresada" trae las dos.
+		- Si el usuario no ingresa ninguna empresa, muestra todas.
+
+3) El punto que dice: "Permitir obtener el total de usuarios por empresa, y todos sus datos. "
+	Lo hace la función: totalDineroPorEmpresa
+		- Trae el total de dinero por viajes de la empresa ingresada.
+		- De la misma forma que la función "buscarCliente", con poner parte del nombre alcanza, pero si hay dos nombres de empresas que contienen la variable "empresaIngresada" devuelve un error indicando que el usuario escriba mejor el nombre.
+		- Se tiene que ingresar sí o sí una empresa.
+	
+4) El punto que dice: "Permitir obtener el total de dinero en viajes por nombre de empresa. "
+	Lo hace la función: totalDineroPorDocumento
+		- Permite obtener la cantidad total de viajes realizados y monto total por documento, 
+		- Muestra los datos del empleado y los viajes.
+		- Es obligatorio ingresar un documento.
+		
+Aclaraciones:		
+-------------
+
+- Ni bien se ingresa cada archivo, se le realiza algunas validaciones
+	El archivo de clientes si tiene algún registro que no contempla lo siguiente se indica cuál es para que el usuario lo corrija. 
+	No se permite continuar con un archivo que tenga alguno de los siguientes errores:
+    - Tiene algún documento que no sea numérico.
+    - Los documentos tienen que ser de 7 u 8 caracteres.
+    - Los campos no pueden ser vacíos.
+    - El mail tiene que contener un ".".
+    - El mail no puede contener más de un ".".
+    - El mail tiene que contener un "@".
+    - El mail no puede contener más de un "@"	
+	
+	El archivo de ventas tiene que validar lo siguiente:
+	- El monto es numérico.
+    - El monto tiene que tener dos decimales.
+    - Los documentos tienen que ser de 7 u 8 caracteres.
+    - Los campos no pueden ser vacíos.
+	
+	
+- El archivo de logs es "log.csv"
+	Y en él, cada vez que el usuario hace una operación, los siguientes campos:
+	
+	fecha: Fecha y hora en que hizo la operación.
+	opcionMenu: La opción de menú que selecciono.
+		opciones posibles:
+			- Buscar cliente
+			- Total de usuarios por empresa
+			- Total de dinero por empresa
+			- Total de dinero por documento
+			- Salir
+	archivoClientes: Nombre del archivo de clientes en uso.
+	archivoViajes: Nombre de archivo de viajes en uso (si es que la función hace uso de él)
+	resultado: OK en caso de que funcione, sino se guarda el error que sucedió
+	parametros: El parámetro que se pasó a la función
+	
+
+
