@@ -4,3 +4,11 @@ fecha,opcionMenu,archivoClientes,archivoViajes,resultado,parametros
 2020-12-08 16:51:58,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
 2020-12-08 16:52:02,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
 2020-12-08 16:52:04,Salir,clientes.csv,viajes.csv,Salir,_
+2020-12-08 16:58:08,Buscar cliente,clientes.csv,_,OK,roc
+2020-12-08 16:58:11,Total de usuarios por empresa,clientes.csv,,OK,byma
+2020-12-08 16:58:14,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
+2020-12-08 16:58:18,Total de dinero por empresa,clientes.csv,viajes.csv,No se encontró ninguna empresa.,buma
+2020-12-08 16:58:23,Total de dinero por documento,clientes.csv,viajes.csv,No se encontró ningun cliente con ese número de dni.,20344871
+2020-12-08 16:58:24,Total de dinero por empresa,clientes.csv,viajes.csv,OK,byma
+2020-12-08 16:58:28,Total de dinero por documento,clientes.csv,viajes.csv,OK,20644871
+2020-12-08 16:58:30,Salir,clientes.csv,viajes.csv,Salir,_

@@ -46,7 +46,7 @@ def validarCamposVacios(linea, listaErrores, x):
 
 def validarArchivoClientes(archivoClientes, camposClientes):
     #Valida si el archivo de clientes tiene alguno de los siguientes problemas:
-    #-Tiene algùn documento que no sea numérico.
+    #-Tiene algún documento que no sea numérico.
     #-Los documentos tienen que ser de 7 u 8 caracteres.
     #-Los campos no pueden ser vacíos.
     #-El mail tiene que contener un ".".
